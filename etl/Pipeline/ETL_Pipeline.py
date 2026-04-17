@@ -1,0 +1,111 @@
+# Upgrade Databricks SDK to the latest version and restart Python to see updated packages
+%pip install --upgrade databricks-sdk==0.70.0
+%restart_python
+
+from databricks.sdk.service.jobs import JobSettings as Job
+
+
+ETL_Medallion_Pipeline = Job.from_dict(
+    {
+        "name": "ETL_Medallion_Pipeline",
+        "tasks": [
+            {
+                "task_key": "Create_Silver_Layer_Tables",
+                "sql_task": {
+                    "query": {
+                        "query_id": "1cf657d9-7e6d-4973-8809-e4b473407e82",
+                    },
+                    "warehouse_id": "e8fa050519519ce7",
+                },
+            },
+            {
+                "task_key": "Load_Data_to_Silver_Layer_Tables",
+                "depends_on": [
+                    {
+                        "task_key": "Create_Silver_Layer_Tables",
+                    },
+                ],
+                "sql_task": {
+                    "query": {
+                        "query_id": "59016875-b474-4a5e-8f53-0a86a756588b",
+                    },
+                    "warehouse_id": "e8fa050519519ce7",
+                },
+            },
+            {
+                "task_key": "Create_and_Load_Data_to_Gold_Layer_Views",
+                "depends_on": [
+                    {
+                        "task_key": "Load_Data_to_Silver_Layer_Tables",
+                    },
+                ],
+                "sql_task": {
+                    "query": {
+                        "query_id": "c01068bf-4a76-4a8c-bc97-9479b49849c7",
+                    },
+                    "warehouse_id": "e8fa050519519ce7",
+                },
+            },
+            {
+                "task_key": "Create_and_Load_Data_to_Analysis_Layer_Views",
+                "depends_on": [
+                    {
+                        "task_key": "Create_and_Load_Data_to_Gold_Layer_Views",
+                    },
+                ],
+                "sql_task": {
+                    "query": {
+                        "query_id": "44ed7e92-89d8-43d9-ad81-85cc2843d4a5",
+                    },
+                    "warehouse_id": "e8fa050519519ce7",
+                },
+            },
+            {
+                "task_key": "Analysis_Layer_Analytics_and_Dashboards",
+                "depends_on": [
+                    {
+                        "task_key": "Create_and_Load_Data_to_Analysis_Layer_Views",
+                    },
+                ],
+                "notebook_task": {
+                    "notebook_path": "/Workspace/Brazilian E-Commerce/scripts/analysis/Analysis_Layer_Visual_Analytics",
+                    "source": "WORKSPACE",
+                },
+            },
+            {
+                "task_key": "Model_Creation_and_Training",
+                "depends_on": [
+                    {
+                        "task_key": "Create_and_Load_Data_to_Analysis_Layer_Views",
+                    },
+                ],
+                "notebook_task": {
+                    "notebook_path": "/Workspace/Brazilian E-Commerce/scripts/ml/Model Training Notebook",
+                    "source": "WORKSPACE",
+                },
+            },
+            {
+                "task_key": "ML_Results_and_Dashboards",
+                "depends_on": [
+                    {
+                        "task_key": "Create_and_Load_Data_to_Analysis_Layer_Views",
+                    },
+                ],
+                "notebook_task": {
+                    "notebook_path": "/Workspace/Brazilian E-Commerce/scripts/ml/Results and Dashboards",
+                    "source": "WORKSPACE",
+                },
+            },
+        ],
+        "queue": {
+            "enabled": True,
+        },
+        "performance_target": "PERFORMANCE_OPTIMIZED",
+    }
+)
+
+from databricks.sdk import WorkspaceClient
+
+w = WorkspaceClient()
+w.jobs.reset(new_settings=ETL_Medallion_Pipeline, job_id=869321832630943)
+# or create a new job using: w.jobs.create(**ETL_Medallion_Pipeline.as_shallow_dict())
