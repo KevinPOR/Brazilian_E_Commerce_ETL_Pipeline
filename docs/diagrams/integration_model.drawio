@@ -1,0 +1,142 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="V71bl-JOZL2unVQMkhJS">
+    <mxGraphModel dx="2647" dy="1200" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MzDv1CxIdMjjP2alGJFD-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=30;" value="&lt;font&gt;&lt;b&gt;Integration Model &lt;/b&gt;&lt;font&gt;(how to tables are related)&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="610" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MzDv1CxIdMjjP2alGJFD-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=26;gradientColor=#ffd966;" value="customers&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="230" width="330" x="435" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="MzDv1CxIdMjjP2alGJFD-18" parent="MzDv1CxIdMjjP2alGJFD-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="customer_id" vertex="1">
+          <mxGeometry height="40" width="330" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-37" parent="MzDv1CxIdMjjP2alGJFD-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;customer_unique_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="330" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-38" parent="MzDv1CxIdMjjP2alGJFD-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;customer_zip_code_prefix&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="330" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-40" parent="MzDv1CxIdMjjP2alGJFD-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;customer_city&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="330" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-41" parent="MzDv1CxIdMjjP2alGJFD-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;customer_state&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="330" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=26;gradientColor=#ffd966;" value="sellers" vertex="1">
+          <mxGeometry height="190" width="300" x="1370" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-2" parent="pNBu8eaMbU4MXhK3zwZn-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;seller_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-3" parent="pNBu8eaMbU4MXhK3zwZn-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;seller_zip_code_prefix&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-48" parent="pNBu8eaMbU4MXhK3zwZn-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;seller_city&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-47" parent="pNBu8eaMbU4MXhK3zwZn-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;seller_state&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=26;gradientColor=#7ea6e0;" value="products" vertex="1">
+          <mxGeometry height="70" width="300" x="960" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-6" parent="pNBu8eaMbU4MXhK3zwZn-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;product_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=26;gradientColor=#b3b3b3;" value="product_category_name_translation" vertex="1">
+          <mxGeometry height="110" width="450" x="1350" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-10" parent="pNBu8eaMbU4MXhK3zwZn-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;product_category_name&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="450" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-11" parent="pNBu8eaMbU4MXhK3zwZn-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;product_category_name_english&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="450" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#e6d0de;strokeColor=#996185;fontSize=26;gradientColor=#d5739d;" value="order_payments" vertex="1">
+          <mxGeometry height="70" width="300" x="450" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-14" parent="pNBu8eaMbU4MXhK3zwZn-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;order_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#e6d0de;strokeColor=#996185;fontSize=26;gradientColor=#d5739d;" value="order_items" vertex="1">
+          <mxGeometry height="190" width="300" x="960" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-18" parent="pNBu8eaMbU4MXhK3zwZn-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;order_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-19" parent="pNBu8eaMbU4MXhK3zwZn-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;order_item_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-42" parent="pNBu8eaMbU4MXhK3zwZn-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;product_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-43" parent="pNBu8eaMbU4MXhK3zwZn-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;seller_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-21" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=26;gradientColor=#b3b3b3;" value="geolocation" vertex="1">
+          <mxGeometry height="150" width="360" x="1340" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-22" parent="pNBu8eaMbU4MXhK3zwZn-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;geolocation_zip_code_prefix&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="360" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-23" parent="pNBu8eaMbU4MXhK3zwZn-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;geolocation_city&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="360" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-39" parent="pNBu8eaMbU4MXhK3zwZn-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;geolocation_state&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-25" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#e6d0de;strokeColor=#996185;fontSize=26;gradientColor=#d5739d;" value="order_review" vertex="1">
+          <mxGeometry height="110" width="300" x="-30" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-26" parent="pNBu8eaMbU4MXhK3zwZn-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="r&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;eview_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-27" parent="pNBu8eaMbU4MXhK3zwZn-25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;order_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-33" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=26;gradientColor=#97d077;" value="orders" vertex="1">
+          <mxGeometry height="110" width="300" x="450" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-34" parent="pNBu8eaMbU4MXhK3zwZn-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;order_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-35" parent="pNBu8eaMbU4MXhK3zwZn-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=26;" value="&lt;span class=&quot;du-bois-dark-typography du-bois-dark-typography-ellipsis du-bois-dark-typography-single-line du-bois-dark-typography-ellipsis-single-line databricks-dataexplorer-1ee6kvl&quot;&gt;customer_id&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="300" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-53" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-54" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-55" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-56" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="pNBu8eaMbU4MXhK3zwZn-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-59" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-60" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-61" edge="1" parent="1" source="pNBu8eaMbU4MXhK3zwZn-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-62" edge="1" parent="1" source="MzDv1CxIdMjjP2alGJFD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pNBu8eaMbU4MXhK3zwZn-63" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="pNBu8eaMbU4MXhK3zwZn-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1270" y="150" as="sourcePoint" />
+            <mxPoint x="1320" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
