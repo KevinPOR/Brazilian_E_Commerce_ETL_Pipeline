@@ -198,6 +198,4 @@ Due to free-tier limitations:
 ## 👨‍💻 Author
 
 Karim Kousa (KevinPOR)  
-Data Engineering Project — Olist E-Commerce Dataset  
-
----
+Data Engineering Project — Olist E-Commerce Dataset
